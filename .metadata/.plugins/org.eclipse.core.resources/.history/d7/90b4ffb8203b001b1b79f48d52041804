@@ -1,0 +1,27 @@
+package ejercicio9;
+
+public class Test {
+
+	public static void main(String [] arg) {
+		
+		Empleado empleado1 = new Empleado("Rodolfo", 1000, "San Francisco", 3, 1, "Sevilla");
+		Dirección direccion1 = new Dirección();
+		empleado1.getNombre();
+		empleado1.getSalario();
+		direccion1.toString();
+		
+		Empleado empleado2 = new Empleado();
+		Dirección direccion2 = new Dirección();	
+		empleado2.getNombre();
+		empleado2.getSalario();
+		direccion2.toString();
+		
+		Empleado empleado3 = new Empleado();
+		Dirección direccion3 = new Dirección();
+		empleado3.getNombre();
+		empleado3.getSalario();
+		direccion3.toString();
+		
+		
+	}
+}

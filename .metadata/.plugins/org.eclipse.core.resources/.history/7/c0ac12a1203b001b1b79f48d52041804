@@ -1,0 +1,13 @@
+package ejercicio9;
+
+public class Test {
+
+	public static void main(String [] arg) {
+		
+		Dirección direccion1 = new Dirección();
+		Dirección direccion2 = new Dirección();
+		Dirección direccion3 = new Dirección();
+		
+		
+	}
+}

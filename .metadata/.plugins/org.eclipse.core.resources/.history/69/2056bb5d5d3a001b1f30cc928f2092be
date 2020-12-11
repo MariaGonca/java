@@ -1,0 +1,47 @@
+package ejercicio4;
+
+public class cafetera {
+	private int _capacidadMaxima;
+	private int _cantidadActual;
+	
+	public cafetera(int capacidadMaxima, int cantidadActual) {
+		super();
+		if(capacidadMaxima<=cantidadActual) {
+			capacidadMaxima=cantidadActual;
+		}
+			
+		this._capacidadMaxima = capacidadMaxima;
+		this._cantidadActual = cantidadActual;
+	}
+	
+	public cafetera() {
+		this._capacidadMaxima=1000;
+		this._cantidadActual=0;
+	}
+	
+	public cafetera(int capacidadMaxima) {
+		this._capacidadMaxima=capacidadMaxima;
+		this._cantidadActual=capacidadMaxima;
+		
+	}
+	
+	public void llenarCafetera() {
+		set_capacidadActual(get_capacidadMaxima());
+	}
+	
+	public int get_capacidadMaxima() {
+		return _capacidadMaxima;
+	}
+	public void set_capacidadMaxima(int _capacidadMaxima) {
+		this._capacidadMaxima = _capacidadMaxima;
+	}
+	public int get_capacidadActual() {
+		return _cantidadActual;
+	}
+	public void set_capacidadActual(int _capacidadActual) {
+		this._cantidadActual = _capacidadActual;
+	}
+	
+	
+}
+

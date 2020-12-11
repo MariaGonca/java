@@ -1,0 +1,11 @@
+package ejercicio7;
+
+public class testAsignatura {
+		   
+		public static void main(String [] arg){
+			  Asignatura materia=new Asignatura("Matematicas", 8);
+			  System.out.println("Tu nota en "+ materia.getNombreAsignatura()+" es "+materia.getnota()+" . "+ materia.indicaAprobado());
+			          
+			    }
+
+}

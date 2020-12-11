@@ -1,0 +1,29 @@
+package ejercicio2;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+        
+        //Te muestra por pantalla la informacion necesaria a introducir 
+       System.out.println("Escribe el modelo del vehículo");
+       String modelo = sc.nextLine();
+       System.out.println("Escriba la potencia");
+       double potencia = sc.nextLine();
+       System.out.println("Escriba tracción");
+       boolean cRuedas = sc.nextLine();
+       
+       
+        //Llamada a la clase objeto para utilizar sus respectivos métodos
+       vehiculo vehiculo1 = new vehiculo(modelo, potencia, cRuedas);
+       System.out.println(vehiculo1.setModel());
+       System.out.println(vehiculo1.muestraDuracion()); 
+       System.out.println(vehiculo1.tieneResumen());
+       System.out.println(vehiculo1.muestraDVDCine());
+       
+       sc.close();
+   }
+	}
+

@@ -1,0 +1,19 @@
+package ejercicio7;
+
+public class testAsignatura {
+		   
+		public static void main(String [] arg){
+			
+			Alumno alumno1 = new Alumno("Matemáticas", 8, "Rodolfo", 22 );
+			System.out.println("Nombre: " + nombreAlumno );
+			
+			
+			
+			Alumno alumno2 = new Alumno("Física", 10, "Mateu", 21 );
+			Alumno alumno3 = new Alumno("Filosofía", 5, "Salva", 24 );
+			
+			
+			
+			   }
+
+}

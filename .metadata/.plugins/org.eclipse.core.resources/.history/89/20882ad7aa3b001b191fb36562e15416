@@ -1,0 +1,36 @@
+package ejercicio12;
+
+import java.util.Scanner;
+
+
+public class test {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("Escribe el nombre del empleado");
+	       String nombre = sc.nextLine();
+	        
+	     empleadoYSueldo empleado1 = new empleadoYSueldo("Antonio", 40, 0, 1000);	  
+	         
+	     empleadoYSueldo empleado2 = new empleadoYSueldo("Manolo", 49, 0, 1000);
+	   
+	     empleadoYSueldo empleado3 = new empleadoYSueldo("Álvaro", 40, 0, 1000);
+	     
+	     
+	    	if(nombre=="Antonio") {
+	    		empleado1.getSueldo();
+	    	 empleado1.sueldo();
+	     }else if (nombre=="Manolo"){
+	    	 empleado2.getSueldo();
+	     }else if (nombre=="Álvaro") {
+	    	empleado3.getSueldo();
+	     }
+	     
+	     sc.close();
+	     
+	}
+	
+
+}

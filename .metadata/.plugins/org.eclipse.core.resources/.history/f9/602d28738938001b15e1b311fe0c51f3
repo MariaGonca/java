@@ -1,0 +1,30 @@
+package ejercicio2;
+
+public class vehiculo {
+	String modelo;
+	double potencia;
+	boolean cRuedas;
+	
+	public void setModel(String modelo) {
+		this.modelo = modelo;
+	}	
+	public double getPotencia() {
+		return potencia;
+	}	
+	public void setPotencia(double potencia) {
+		this.potencia = potencia;
+	}	
+	public boolean iscRuedas() {
+		if (cRuedas == false) {
+			System.out.println("No tiene tracción en las cuatro ruedas");
+			return cRuedas;
+		}else {
+			System.out.println("Tiene tracción en las cuatro ruedas");
+			return cRuedas;
+		}
+	}
+	
+	public void setcRuedas(boolean cRuedas) {
+		this.cRuedas = cRuedas;
+	}
+}

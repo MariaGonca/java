@@ -1,0 +1,22 @@
+package ejercicio9;
+
+public class Test {
+
+	public static void main(String [] arg) {
+		//Creación de tres direcciones y tres empleados
+		Dirección direccion1 = new Dirección("San Francisco", 3, 1, "Sevilla");
+		Empleado empleado1 = new Empleado("Rodolfo", 1000, direccion1);
+		empleado1.nombreysalario();
+		direccion1.informaciondireccion();
+		
+		Dirección direccion2 = new Dirección("San Antonio", 4, 2, "Sevilla");
+		Empleado empleado2 = new Empleado("Manuel", 2000, direccion2);	
+		empleado2.nombreysalario();
+		direccion2.informaciondireccion();
+		
+		Dirección direccion3 = new Dirección("San Andrés", 5, 1, "Sevilla");
+		Empleado empleado3 = new Empleado("Salva", 1500, direccion3);
+		empleado3.nombreysalario();
+		direccion3.informaciondireccion();			
+	}
+}

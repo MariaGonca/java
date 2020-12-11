@@ -1,0 +1,28 @@
+package ejercicio7;
+
+public class Alumno extends Asignatura {
+
+	private String nombreAlumno;
+	private int edadAlumno;	
+		
+	public Alumno(String nombreAsignatura, double notaAsignatura, String nombreAlumno, int edadAlumno) {
+		super(nombreAsignatura, notaAsignatura);
+		this.nombreAlumno = nombreAlumno;
+		this.edadAlumno = edadAlumno;
+	}
+	public String getNombreAlumno() {
+		return nombreAlumno;
+	}
+	public void setNombreAlumno(String nombreAlumno) {
+		this.nombreAlumno = nombreAlumno;
+	}
+	public int getEdadAlumno() {
+		return edadAlumno;
+	}
+	public void setEdadAlumno(int edadAlumno) {
+		this.edadAlumno = edadAlumno;
+	}
+	
+	
+	
+}

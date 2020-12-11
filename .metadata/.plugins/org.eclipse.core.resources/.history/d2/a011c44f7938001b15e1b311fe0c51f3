@@ -1,0 +1,32 @@
+package ejercicio1;
+
+	import java.util.Scanner;
+
+public class aplicacionDVD {
+
+	
+	public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        
+         //Te muestra por pantalla la informacion necesaria a introducir y despues te pide que introduzcas
+        System.out.println("Escriba el título de la película");
+        String titulo = sc.nextLine();
+        System.out.println("Escriba el nombre del director");
+        String director = sc.nextLine();
+        System.out.println("Haz un resumen");
+        String resumen = sc.nextLine();
+        System.out.println("Dinos el género");
+        String genero = sc.nextLine();
+        System.out.println("Duración");
+        int duracion = sc.nextInt();
+        
+         //Llamada a la clase objeto para utilizar sus respectivos metodos
+        DVDCine cine = new DVDCine(titulo, director, resumen, genero, duracion);
+        System.out.println(cine.esThriller());
+        System.out.println(cine.muestraDuracion()); 
+        System.out.println(cine.tieneResumen());
+        System.out.println(cine.muestraDVDCine());
+    }
+
+	
+}

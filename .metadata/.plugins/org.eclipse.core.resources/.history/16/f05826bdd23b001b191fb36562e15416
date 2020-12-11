@@ -1,0 +1,49 @@
+package ejercicio16;
+
+public class Personajes {
+
+	private String nombre;
+	private int energia;
+	private int alimento;
+
+	
+	public Personajes(String nombre, int energia, int alimento, String arma) {
+		super();
+		this.nombre = nombre;
+		this.energia = energia;
+		this.alimento = alimento;
+			
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEnergia() {
+		return energia;
+	}
+
+	public void setEnergia(int energia) {
+		this.energia = energia;
+	}
+
+	public int getAlimento() {
+		return alimento;
+	}
+
+	public void setAlimento(int alimento) {
+		this.alimento = alimento;
+	}
+
+	
+	
+	//Método alimentar
+	public void Alimentar(int nuevaEnergia) {
+		this.energia=energia+nuevaEnergia;
+	}
+	
+}

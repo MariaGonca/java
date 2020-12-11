@@ -1,0 +1,42 @@
+package ejercicio14;
+
+public class Marciano {
+	private boolean vivo = false;
+	private static int numMarcianos;
+	private String nombre;
+
+	public Marciano(String nombre) {
+		this.vivo=true;
+		this.nombre=nombre;
+		numMarcianos++;
+		System.out.println(nace());
+	}
+	
+	public String nace() {
+		return "Hola, he nacido, soy el marciano"+nombre+" y somos "+cuentaMarcianos()+ " vivos";
+	}
+	
+	public String muere() {
+		if (vivo==true) {
+			vivo=false;
+			numMarcianos --;
+			return "El marciano "+nombre+ "ha muerto";
+		}else {
+			return "El marciano ya está muerto";
+		}
+	}
+	
+	public int cuentaMarcianos() {
+		return numMarcianos;
+	}
+	
+	public void estaVivo(){
+		if(vivo == true) {
+			System.out.println("Este marciano está vivo");
+		}else {
+			System.out.println("Este marciano está muerto");
+		}	
+	}
+	
+	
+}

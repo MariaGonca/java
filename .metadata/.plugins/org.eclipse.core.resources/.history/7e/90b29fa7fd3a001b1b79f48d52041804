@@ -1,0 +1,16 @@
+package ejercicio6;
+
+public class PersonaEmpleado {
+	
+	public static void main (String[] args) {
+		
+		//Definir un objeto de la clase persona
+		Persona persona1 = new Persona("Rodolfo", 22);
+		//Llamar a los métodos de persona ????????????????????
+		persona1.printf();
+		persona1.setEdad(22);
+		persona1.cargarDatos(Rodo, 22);
+		
+	}
+
+}

@@ -1,0 +1,48 @@
+package ejercicio15;
+
+public class Cuenta {
+
+	private float saldoActual;
+	private float variacionSaldo;
+	private float numeroCuenta;
+	
+	public Cuenta(float saldoActual, float variacionSaldo, float numeroCuenta) {
+		super();
+		this.saldoActual = saldoActual;
+		this.variacionSaldo = variacionSaldo;
+		this.numeroCuenta = numeroCuenta;
+	}	
+//Este es el getSaldo() que devuelve el saldo actual
+	public float getSaldoActual() {
+		return saldoActual;
+	}
+	
+	public void setSaldoActual(float saldoActual) {
+		this.saldoActual = saldoActual;
+	}
+
+	public float getVariacionSaldo() {
+		return variacionSaldo;
+	}
+
+	public void setVariacionSaldo(float variacionSaldo) {
+		this.variacionSaldo = variacionSaldo;
+	}
+
+	public float getNumeroCuenta() {
+		return numeroCuenta;
+	}
+
+	public void setNumeroCuenta(float numeroCuenta) {
+		this.numeroCuenta = numeroCuenta;
+	}
+
+	//Métodos ingresar y extraer
+	public void ingresar(float c) {
+		this.saldoActual=saldoActual+variacionSaldo;
+	}
+	
+	public void extraer(float c) {
+		this.saldoActual=saldoActual-variacionSaldo;
+	}	
+}

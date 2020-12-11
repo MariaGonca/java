@@ -1,0 +1,12 @@
+package ejercicio6;
+
+public class PersonaEmpleado {
+	
+	public static void main (Strings[] args) {
+		
+		Persona persona1 = new Persona();
+	
+		
+	}
+
+}

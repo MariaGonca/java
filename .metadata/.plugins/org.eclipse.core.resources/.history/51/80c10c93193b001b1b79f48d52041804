@@ -1,0 +1,39 @@
+package ejercicio7;
+
+//Implementar clase alumno que incluya Asignatura
+public class Alumno extends Asignatura {
+
+	private String nombreAlumno;
+	private int edadAlumno;	
+	
+	//Constructor que acepta como parámetro el nombre y la edad
+	public Alumno(String nombreAsignatura, double notaAsignatura, String nombreAlumno, int edadAlumno) {
+		super(nombreAsignatura, notaAsignatura);
+		this.nombreAlumno = nombreAlumno;
+		this.edadAlumno = edadAlumno;
+	}
+	
+	
+	 public void informacion() {
+		   System.out.printf("Nombre: " + this.nombreAlumno  + "\n");
+		   System.out.printf("Edad: " + this.edadAlumno + "\n");            //??????????????????????
+		   System.out.printf("Asignaturas que cursó: \nNombre:"+ this.getNombreAsignatura() + "\nNota: " + this.getnotaAsignatura() +" \nCalificación: "+this.indicaAprobado() +"\n");
+	   }
+	
+
+	
+	//getters y setters
+	public String getNombreAlumno() {
+		return nombreAlumno;
+	}
+	public void setNombreAlumno(String nombreAlumno) {
+		this.nombreAlumno = nombreAlumno;
+	}
+	public int getEdadAlumno() {
+		return edadAlumno;
+	}
+	public void setEdadAlumno(int edadAlumno) {
+		this.edadAlumno = edadAlumno;
+	}
+		
+}

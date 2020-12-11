@@ -1,0 +1,33 @@
+package ejercicio12;
+
+public class empleadoYSueldo {
+
+	private String nombre;
+	private int horas;
+	private int sueldo;
+	private int tarifaNormal;
+	
+	
+	
+	public empleadoYSueldo(String nombre, int horas, int sueldo, int tarifaNormal) {
+		super();
+		this.nombre = nombre;
+		this.horas = horas;
+		this.sueldo = sueldo;
+		this.tarifaNormal = tarifaNormal;
+		
+	}
+	
+	public void sueldo() {
+		if(horas<=40) {
+			sueldo=tarifaNormal;
+			System.out.println("El sueldo de "+nombre+" es de "+sueldo+" euros porque trabajó "+horas+" horas");
+		}else {
+			sueldo=tarifaNormal+((horas-40)*(tarifaNormal+(tarifaNormal/2)));
+			System.out.println("El sueldo de "+nombre+" es de "+sueldo+" euros porque trabajó "+horas+" horas");
+		}
+	}
+
+	
+	
+}

@@ -1,0 +1,48 @@
+package ejercicio15;
+import java.util.Scanner;
+public class Cuenta {
+
+	private float saldoActual;
+	private String nombreCuenta;
+	
+	public Cuenta(float saldoActual, String nombreCuenta) {
+		super();
+		this.saldoActual = saldoActual;
+		this.nombreCuenta = nombreCuenta;
+	}	
+//Este es el getSaldo() que devuelve el saldo actual
+	public float getSaldoActual() {
+		return saldoActual;
+	}
+	
+	public void setSaldoActual(float saldoActual) {
+		this.saldoActual = saldoActual;
+	}
+
+	public String getNombreCuenta() {
+		return nombreCuenta;
+	}
+
+	public void setNombreCuenta(String numeroCuenta) {
+		this.nombreCuenta = numeroCuenta;
+	}
+
+	//Métodos ingresar y extraer
+	public void ingresar(float c) {
+		this.saldoActual=saldoActual+c;
+	}
+	
+	public void extraer(float c) {
+		this.saldoActual=saldoActual-c;
+	}
+	
+	
+	//Método crear cuenta ?????????????????????????????????????????????
+	public void crearCuenta() {	
+	Scanner sc =new Scanner(System.in);
+	String nombreCuenta=sc.nextLine();
+	sc.close();
+	}
+	
+	
+}

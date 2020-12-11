@@ -1,0 +1,72 @@
+package ejercicio3;
+
+public class Cuenta {
+
+	long numerodecuenta;
+	long DNI;
+	double saldo;
+	double interes;
+	double ingresar;
+	
+	//Constructor por defecto
+	public Cuenta(long numerodecuenta, long dNI, double saldo, double interes) {
+		super();
+		this.numerodecuenta = numerodecuenta;
+		DNI = dNI;
+		this.saldo = saldo;
+		this.interes = interes;
+	}
+
+	//Constructor con DNI, saldo e interés
+	public Cuenta(long dNI, double saldo, double interes) {
+		super();
+		DNI = dNI;
+		this.saldo = saldo;
+		this.interes = interes;
+	}
+
+
+	//getters y setters, para el número de cuenta no hay getter
+	public void setNumerodecuenta(long numerodecuenta) {
+		this.numerodecuenta = numerodecuenta;
+	}
+
+	public long getDNI() {
+		return DNI;
+	}
+
+	public void setDNI(long dNI) {
+		DNI = dNI;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getInteres() {
+		return interes;
+	}
+
+	public void setInteres(double interes) {
+		this.interes = interes;
+	}
+	
+	public double actualizarSaldo() {
+		return this.saldo;
+	}
+	
+	public double ingresar(double) {
+		this.ingresar
+		
+	}
+	
+	
+	
+	
+	
+}	
+}

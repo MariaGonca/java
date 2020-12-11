@@ -1,0 +1,42 @@
+package ejercicio7;
+
+public class Asignatura {
+
+	//Atributos de la clase asignatura
+	private String nombreAsignatura;
+    private double notaAsignatura;
+	
+    //Constructor que acepta atributos como parámetros
+    public Asignatura(String nombreAsignatura, double notaAsignatura){
+		   this.nombreAsignatura=nombreAsignatura;
+		   this.notaAsignatura=notaAsignatura;
+		   }
+	//Método para modificar la nota	   
+    public void setNota(double nuevanota){
+		   notaAsignatura=nuevanota;
+		   }
+	//Método para consultar la nota	   
+	public double getnota(){
+		       
+		   return notaAsignatura;
+		   }
+	//Método para saber si es aprobado o suspenso	   
+	public String indicaAprobado(){
+		   if(notaAsignatura>=5)
+			   return "Aprobado";
+		   else
+			   return "Suspenso";  }
+		   
+		   public String getNombreAsignatura(){
+		       return nombreAsignatura;
+		   }
+		   
+		}
+	class PruebaAsignatura{
+		   
+	public static void main(String [] arg){
+		  Asignatura materia=new Asignatura("Matematicas", 61);
+		  System.out.println("Tú calificación en la materia: "+ materia.getNombreAsignatura()+" Es "+materia.getnota()+"\ny por lo tanto estás "+ materia.indicaAprobado());
+		          
+		    }
+}

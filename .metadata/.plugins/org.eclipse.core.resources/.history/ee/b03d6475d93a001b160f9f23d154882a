@@ -1,0 +1,14 @@
+package ejercicio6;
+
+import ejercicio3.Cuenta;
+
+public class PersonaEmpleado {
+	
+	public static void main (Strings[] args) {
+		
+		Persona cuenta1 = new Cuenta();
+		
+		
+	}
+
+}

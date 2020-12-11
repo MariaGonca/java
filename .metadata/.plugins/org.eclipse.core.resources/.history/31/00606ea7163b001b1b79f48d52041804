@@ -1,0 +1,37 @@
+package ejercicio7;
+
+public class Asignatura {
+
+	//Atributos de la clase asignatura
+	private String nombreAsignatura;
+    private double notaAsignatura;
+	
+    //Constructor que acepta atributos como parámetros
+    public Asignatura(String nombreAsignatura, double notaAsignatura){
+		   this.nombreAsignatura=nombreAsignatura;
+		   this.notaAsignatura=notaAsignatura;
+		   }
+	//Método para modificar la nota	   
+    public void setNota(double notamodificada){
+		   notaAsignatura=notamodificada;
+		   }
+	//Método para consultar la nota	   
+	public double getnota(){
+		       
+		   return notaAsignatura;
+		   }
+	//Método para saber si es aprobado o suspenso	   
+	public String indicaAprobado(){
+		   if(notaAsignatura<5) {
+			   return "Suspenso";
+		   }else {
+			   return "Aprobado"; 
+		   }
+	}
+	
+	public String getNombreAsignatura(){
+		   return nombreAsignatura;
+		   }
+		   	   
+}
+	

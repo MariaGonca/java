@@ -1,0 +1,22 @@
+package ejercicio12;
+
+import java.util.Scanner;
+
+
+public class test {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("Escribe el nombre del empleado");
+	       String nombre = sc.nextLine();
+	        
+	     empleadoYSueldo empleado1 = new empleadoYSueldo(nombre, 40, 0, 1000);
+	     empleado1.sueldo();
+	     
+	     sc.close();
+	}
+	
+
+}

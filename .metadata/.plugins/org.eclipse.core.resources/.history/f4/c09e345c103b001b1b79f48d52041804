@@ -1,0 +1,9 @@
+package ejercicio7;
+
+public class Alumno extends Asignatura {
+
+	private String nombreAlumno;
+	private int edadAlumno;
+	
+	
+}
